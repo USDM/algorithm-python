@@ -1,5 +1,5 @@
 import random
-from karatzuba import karatzuba
+from karatzuba_ia import karatzuba
 import time
 
 def multiplication_normal(number_1, number_2):
@@ -7,7 +7,7 @@ def multiplication_normal(number_1, number_2):
 
 def test_function(function,number_1,number_2):
   start = time.time()
-  result = function(number_1,number_2)
+  result = int(function(number_1,number_2))
   end = time.time()
   print(start,end,end-start)
   return result
